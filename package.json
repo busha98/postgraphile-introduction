@@ -1,0 +1,33 @@
+{
+  "name": "postgraphile-introduction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/ts-node index.ts",
+    "start:dev": "./node_modules/nodemon/bin/nodemon.js ./node_modules/.bin/ts-node index.ts",
+    "db-migrate:up": "./node_modules/db-migrate/bin/db-migrate up",
+    "db-migrate:create": "./node_modules/db-migrate/bin/db-migrate create",
+    "pg:up": "docker run -itd --name pg -p '5432:5432' -e POSTGRES_PASSWORD=password -e POSTGRES_USER=root -e POSTGRES_DB=sandbox postgres:latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/busha98/postgraphile-introduction.git"
+  },
+  "author": "busha98",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/busha98/postgraphile-introduction/issues"
+  },
+  "homepage": "https://github.com/busha98/postgraphile-introduction#readme",
+  "dependencies": {
+    "db-migrate": "^0.11.11",
+    "db-migrate-pg": "^1.2.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "postgraphile": "^4.7.0",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.3"
+  }
+}

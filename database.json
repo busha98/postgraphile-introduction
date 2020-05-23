@@ -1,0 +1,11 @@
+{
+  "dev": {
+    "driver": "pg",
+    "user": "root",
+    "password": "password",
+    "host": "localhost",
+    "database": "sandbox",
+    "port": "5432"
+  }
+}
+
